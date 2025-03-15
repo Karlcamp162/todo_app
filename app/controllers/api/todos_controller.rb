@@ -1,5 +1,5 @@
-class TodosController < ApplicationController
-  before_action :set_todo, only: %i[ show update destroy ]
+class Api::TodosController < ApplicationController
+  before_action :set_todo, only: %i[ show update_completed destroy ]
 
   # GET /todos
   def index
@@ -16,17 +16,17 @@ class TodosController < ApplicationController
   # POST /todos
   def create
     @todo = Todo.new(todo_params)
-
+  
     if @todo.save
-      render json: @todo, status: :created, location: @todo
+      render json: @todo, status: :created
     else
       render json: @todo.errors, status: :unprocessable_entity
     end
   end
 
   # PATCH/PUT /todos/1
-  def update
-    if @todo.update(todo_params)
+  def update_completed
+    if @todo.update(completed: params[:completed])
       render json: @todo
     else
       render json: @todo.errors, status: :unprocessable_entity
@@ -46,6 +46,6 @@ class TodosController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def todo_params
-      params.expect(todo: [ :todo_name, :completed ])
+      params.require(todo: [ :todo_name, :completed ])
     end
 end
