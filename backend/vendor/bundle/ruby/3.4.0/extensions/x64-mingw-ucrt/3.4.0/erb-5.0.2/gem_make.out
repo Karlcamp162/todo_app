@@ -1,0 +1,20 @@
+current directory: C:/Users/Karlcamp/Desktop/todo_app2/backend/vendor/bundle/ruby/3.4.0/gems/erb-5.0.2/ext/erb/escape
+C:/Ruby34-x64/bin/ruby.exe extconf.rb
+checking for rb_ext_ractor_safe() in ruby.h... yes
+creating Makefile
+
+current directory: C:/Users/Karlcamp/Desktop/todo_app2/backend/vendor/bundle/ruby/3.4.0/gems/erb-5.0.2/ext/erb/escape
+make DESTDIR\= sitearchdir\=./.gem.20250720-33176-5oo71a sitelibdir\=./.gem.20250720-33176-5oo71a clean
+
+current directory: C:/Users/Karlcamp/Desktop/todo_app2/backend/vendor/bundle/ruby/3.4.0/gems/erb-5.0.2/ext/erb/escape
+make DESTDIR\= sitearchdir\=./.gem.20250720-33176-5oo71a sitelibdir\=./.gem.20250720-33176-5oo71a
+generating escape-x64-mingw-ucrt.def
+compiling escape.c
+linking shared-object erb/escape.so
+
+current directory: C:/Users/Karlcamp/Desktop/todo_app2/backend/vendor/bundle/ruby/3.4.0/gems/erb-5.0.2/ext/erb/escape
+make DESTDIR\= sitearchdir\=./.gem.20250720-33176-5oo71a sitelibdir\=./.gem.20250720-33176-5oo71a install
+/usr/bin/install -c -m 0755 escape.so ./.gem.20250720-33176-5oo71a/erb
+
+current directory: C:/Users/Karlcamp/Desktop/todo_app2/backend/vendor/bundle/ruby/3.4.0/gems/erb-5.0.2/ext/erb/escape
+make DESTDIR\= sitearchdir\=./.gem.20250720-33176-5oo71a sitelibdir\=./.gem.20250720-33176-5oo71a clean
